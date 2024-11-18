@@ -1,0 +1,7 @@
+{
+  "name": "parImpar",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

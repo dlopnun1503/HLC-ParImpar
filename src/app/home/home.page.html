@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Averigua si tu numero es par o impar y si es mayor o menor que el secreto
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-padding">
+    <ion-input type="number" min="1" max="100" [(ngModel)]="num" placeholder="Introduce un numero del 1 al 100">
+    </ion-input>
+    <p>El número introducido es {{ parImpar }} </p>
+    <p>El número secreto es {{ mayorMenor }} que el numero introducido</p>
+    <ion-button expand="block" (click)="compruebaNumero()">Adivina</ion-button>
+    <ion-button expand="block" (click)="compruebaParImpar()">Compruebe</ion-button>
+  </div>
+  <div id="container">
+    <!-- Versión para orientación vertical -->
+    <div class="text-block-portrait">
+      <strong>Texto en modo retrato</strong>
+      <p>Texto visible en vertical</p>
+    </div>
+  
+    <!-- Versión para orientación horizontal -->
+    <div class="text-block-landscape">
+      <strong>Texto en modo apaisado</strong>
+      <p>Texto visible en horizontal</p>
+    </div>
+  </div>
+</ion-content>
